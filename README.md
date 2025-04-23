@@ -1,9 +1,17 @@
-# Projektrepository
+# Fast Run Length Encoding
 
-Beachten Sie, dass die äußere Form und die Einhaltung der Formalitäten wichtige Bewertungskriterien sind. Halten Sie sich deshalb **unbedingt** an folgende Ordnerstruktur und beachten Sie insbesondere Groß- und Kleinschreibung:
+## USAGE:
+```
+./main [OPTIONS] [INPUT FILE]
+```
 
-- `Ausarbeitung/Ausarbeitung.pdf`: PDF Ihrer Ausarbeitung
-- `Ausarbeitung/Ausarbeitung.tex`: LaTeX-Quellen Ihrer Ausarbeitung
-- `Implementierung/`: Ihre Implementierung
-- `Implementierung/Makefile`: Makefile für Ihre Implementierung, welches durch einen Aufruf von `make` Ihre Implementierung kompiliert
-- `Vortrag/Vortrag.pdf`: Folien für Ihre Abschlusspräsentation
+## OPTIONS:
+	-V [version number]		Specifies the version for encoding/decoding (0-2). -V0 by default.
+	-B [repetitions (optional)]	Performs runtime measurements when set. Optionally defines the number of repetitions.
+	-o <Path to File>		Specifies the output file.
+
+## Examples:
+	Encode: ```./main -V0 image.pbm```
+	Decode: ```./main -V0 -d compressed.bin```
+
+
