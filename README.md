@@ -11,7 +11,7 @@
 	-o <Path to File>		Specifies the output file.
 
 ## Examples:
-	Encode: ```./main -V0 image.pbm```
-	Decode: ```./main -V0 -d compressed.bin```
+	Encode: ./main -V0 image.pbm
+	Decode: ./main -V0 -d compressed.bin
 
 
